@@ -8,5 +8,7 @@ var quotes = [
 
 	function newQuote() {
 		var randomNumber = Math.floor(Math.random() * (quotes.length));
-		document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
+		var qu = quotes[randomNumber];
+		var tam = qu.fontsize(70);
+		document.getElementById('quoteDisplay').innerHTML = qu;
 	}
